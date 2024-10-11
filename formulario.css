@@ -1,0 +1,126 @@
+/* Estilos para la navegación */
+nav ul {
+    list-style: none;
+    overflow: hidden; 
+}
+nav ul li {
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    list-style: none;
+    margin-left: 25px;
+}
+nav ul li a {
+    display: block; 
+    padding: 20px;
+    color: #141414;
+    text-decoration: none;
+}
+nav ul li:hover {
+    background: #eb65fa;
+    border-radius: 20px;
+}
+/* Estilos para el formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 400px; /* Ancho máximo */
+    margin: 5% auto; /* Centra el formulario */
+    width: 59%;
+    padding: 3%;
+    background-color: #99507a;
+    border-radius: 50px;
+}
+/* Estilo para los elementos del formulario */
+.form-group {
+    margin-bottom: 20px; /* Espacio entre los elementos */
+}
+div {
+    background-color: #eb5bbb;
+    margin: 10px 0;
+    border: solid 10px #791e48;
+    border-radius: 30px;
+    padding: 10px;
+}
+p {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+/* Alinear los labels a la izquierda */
+label {
+    text-align: left;
+    display: block;
+    margin-bottom: 5px; /* Espacio entre el label y el campo de entrada */
+    border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* Alinea los campos de entrada a la izquierda */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 10px; /* Espacio interno */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 4px; /* Bordes redondeados */
+    margin-bottom: 10px; /* Espacio entre campos */
+}
+/* Alinear los botones a la izquierda */
+.BotonArriba{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    box-shadow: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+button[type="submit"]:hover,
+button[type="button"]:hover {
+    background-color: #dfeaf5;
+}
+/* Estilos generales para el cuerpo */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Fuente de letra */
+    border: 2px solid #974879; /* Borde */
+    padding: 20px; /* Espacio entre el contenido y el borde */
+    background-color: #de82b8;
+    display: flex;
+}
+/* Estilos para el botón de volver arriba */
+.BotonArriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    box-shadow: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+/* Estilos para la tabla */
+table {
+    width: 30%;
+    border-collapse: collapse;
+    background-color: #f4d6c1;
+    margin-top: 20px 0;
+    font-size: 1.25rem;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 0px;
+    text-align: left;
+    border: 2px solid black;
+}
+div input {
+    margin: -1%;
+}

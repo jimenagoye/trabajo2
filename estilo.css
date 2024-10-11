@@ -1,0 +1,48 @@
+body {
+    background-color: antiquewhite;
+    text-align: center;
+    font-family: Garamond, serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    color: rgb(245, 245, 200);
+    background-color: rosybrown;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    padding: 10px;
+  }
+  footer {
+    color: rgb(245, 245, 200);
+    background-color: rosybrown;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    padding: 10px;
+  }
+  aside {
+    display: inline-block;
+    width: 300px;
+    min-height: 150px;
+    background-color: pink;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  h3 {
+    text-decoration-line: underline;
+    margin-top: 0;
+  }
+  img {
+    background-color: black;
+    margin: 0 auto;
+    width: 200px;
+    height: auto;
+  }

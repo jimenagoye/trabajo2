@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header id="INICIO">
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Principal</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <h1>Formulario de Contacto</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" maxlength="20" required>
+            </div>
+
+            <div class="form-group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" maxlength="20">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ejemplo: 123-456-7890">
+            </div>
+
+            <div class="form-group">
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" min="16" max="120">
+            </div>
+
+            <div class="form-group">
+                <label for="direccion">Dirección:</label>
+                <textarea id="direccion" name="direccion"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="provincia">Provincia:</label>
+                <input type="text" id="provincia" name="provincia" list="provincias">
+                <datalist id="provincias">
+                    <option value="Buenos Aires">
+                    <option value="Catamarca">
+                    <option value="Chubut">
+                    <option value="La Pampa">
+                    <option value="Neuquén">
+                    <option value="Río Negro">
+                    <option value="Santa Cruz">
+                    <option value="Tierra del Fuego">
+                </datalist>
+            </div>
+
+            <div class="form-group">
+                <label for="codigoPostal">Código Postal:</label>
+                <input type="text" id="codigoPostal" name="codigoPostal" pattern="A\d{4}[A-Z]{3}" placeholder="Ejemplo: A1234ABC">
+            </div>
+
+            <fieldset>
+                <legend>Método preferido de contacto:</legend>
+                <div class="form-group">
+                    <label><input type="radio" name="contacto" value="correoElectronico" checked> Correo Electrónico</label>
+                </div>
+                <div class="form-group">
+                    <label><input type="radio" name="contacto" value="correoPostal"> Correo Postal</label>
+                </div>
+                <div class="form-group">
+                    <label><input type="radio" name="contacto" value="telefono"> Teléfono</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Tipo de suscripción:</legend>
+                <div class="form-group">
+                    <label><input type="checkbox" name="suscripcion[]" value="noticias"> Noticias</label>
+                </div>
+                <div class="form-group">
+                    <label><input type="checkbox" name="suscripcion[]" value="promociones"> Promociones</label>
+                </div>
+                <div class="form-group">
+                    <label><input type="checkbox" name="suscripcion[]" value="alertas" checked> Alertas</label>
+                </div>
+                <div class="form-group">
+                    <label><input type="checkbox" name="suscripcion[]" value="eventos"> Eventos</label>
+                </div>
+            </fieldset>
+        </form>
+
+        <!-- Botón de cargar -->
+        <button type="button" id="cargar">Cargar</button>
+
+        <!-- Tabla vacía -->
+         
+    <h2>Datos del formulario:</h2>
+        <table border="1" id="tabla">
+            <thead>
+                <tr>
+                    <th>Campo</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nombre</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Apellido</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Teléfono</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Edad</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Dirección</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Provincia</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Código Postal</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Método de Contacto</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Suscripción</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <footer> 
+            Jimena Lara Goyenola <br> 
+            Email: goyenolajimena8@gmail.com <br>
+            Dirección del CURZA: Monseñor Esandi y Ayacucho, 8500 - Viedma, Río Negro, Argentina
+        </footer>
+    </main>
+    <a href="#INICIO"> 
+        <img src="/Jimena/flecha_1.jpg" class="BotonArriba">
+    </a>
+</body>
+</html>
