@@ -6,7 +6,7 @@ ul {
     top: 0;
     z-index: 1000; 
     padding: 0px 5px;
-    width: 80%;
+    width: 90%;
     box-sizing: border-box;
 }
 
@@ -130,8 +130,10 @@ div input {
 .flecha{
     text-align: right;
     width: 50%;
-    right: 4%;
+    right: 2%;
     margin-right: -900px;
+    margin-top: 4500%;
     border-radius: 50px;
     cursor: pointer;
+    padding: 20%;
   }
