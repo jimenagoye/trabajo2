@@ -1,4 +1,15 @@
-/* Estilos para la navegación */
+ul {
+    color: rgb(245, 245, 200);
+    background-color: rosybrown;
+    border: 2px solid black;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    padding: 0px 5px;
+    width: 80%;
+    box-sizing: border-box;
+}
+
 nav ul {
     list-style: none;
     overflow: hidden; 
@@ -17,27 +28,25 @@ nav ul li a {
     text-decoration: none;
 }
 nav ul li:hover {
-    background: #eb65fa;
+    background: antiquewhite;
     border-radius: 20px;
 }
-/* Estilos para el formulario */
 form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 400px; /* Ancho máximo */
-    margin: 5% auto; /* Centra el formulario */
+    max-width: 400px;
+    margin: 5% auto;
     width: 59%;
     padding: 3%;
     background-color: #99507a;
     border-radius: 50px;
 }
-/* Estilo para los elementos del formulario */
 .form-group {
-    margin-bottom: 20px; /* Espacio entre los elementos */
+    margin-bottom: 20px;
 }
 div {
-    background-color: #eb5bbb;
+    background-color: rosybrown;
     margin: 10px 0;
     border: solid 10px #791e48;
     border-radius: 30px;
@@ -46,34 +55,31 @@ div {
 p {
     font-weight: bold;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 10%;
 }
 label, input, textarea {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 10%;
 }
-/* Alinear los labels a la izquierda */
 label {
     text-align: left;
     display: block;
-    margin-bottom: 5px; /* Espacio entre el label y el campo de entrada */
-    border-radius: 5px;
+    margin-bottom: 5%;
+    border-radius: 5%;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-/* Alinea los campos de entrada a la izquierda */
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 input[type="number"],
 textarea,
 select {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    padding: 10px; /* Espacio interno */
-    border: 1px solid #ccc; /* Borde */
-    border-radius: 4px; /* Bordes redondeados */
-    margin-bottom: 10px; /* Espacio entre campos */
+    width: 80%;
+    padding: 8%;
+    border: 1% solid #ccc;
+    border-radius: 4%;
+    margin-bottom: 10%;
 }
-/* Alinear los botones a la izquierda */
 .BotonArriba{
     position: fixed;
     bottom: 20px;
@@ -87,15 +93,13 @@ button[type="submit"]:hover,
 button[type="button"]:hover {
     background-color: #dfeaf5;
 }
-/* Estilos generales para el cuerpo */
 body {
-    font-family: Arial, Helvetica, sans-serif; /* Fuente de letra */
-    border: 2px solid #974879; /* Borde */
-    padding: 20px; /* Espacio entre el contenido y el borde */
-    background-color: #de82b8;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid #974879;
+    padding: 20px;
+    background-color: #c27ba4;
     display: flex;
 }
-/* Estilos para el botón de volver arriba */
 .BotonArriba {
     position: fixed;
     bottom: 20px;
@@ -105,7 +109,6 @@ body {
     border-radius: 20px;
     cursor: pointer;
 }
-/* Estilos para la tabla */
 table {
     width: 30%;
     border-collapse: collapse;
@@ -124,3 +127,11 @@ th, td {
 div input {
     margin: -1%;
 }
+.flecha{
+    text-align: right;
+    width: 50%;
+    right: 4%;
+    margin-right: -900px;
+    border-radius: 50px;
+    cursor: pointer;
+  }

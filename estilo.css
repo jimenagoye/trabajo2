@@ -5,44 +5,148 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-  }
-  header {
+}
+header {
+    color: rgb(245, 245, 200);
+    background-color: rosybrown;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+    padding: 10px;
+}
+
+h2 {
+    background-color: pink;
+    border-width: 3px;
+    border-style: solid;
+    padding: 0%;
+    border-color: black;
+    margin: 2%;
+    padding: 5%;    
+}
+footer {
     color: rgb(245, 245, 200);
     background-color: rosybrown;
     border-width: 2px;
     border-style: solid;
     border-color: black;
     padding: 10px;
-  }
-  footer {
-    color: rgb(245, 245, 200);
-    background-color: rosybrown;
-    border-width: 2px;
-    border-style: solid;
-    border-color: black;
-    padding: 10px;
-  }
-  aside {
+} 
+.menu{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: rosybrown ;
+  z-index: 100;
+}
+aside {
     display: inline-block;
     width: 300px;
-    min-height: 150px;
+    min-height: 50px;
     background-color: pink;
     margin: 10px;
     padding: 10px;
+    margin-top: 50px;
     border: 2px solid black;
-  }
-  
-  ul {
+}
+ol{
+    text-align: center;
+    list-style: none;
+    width: 80;
+    margin: 0 auto;
+    padding: 20px;
+}
+ul {
     list-style-type: none;
     padding: 0;
-  }
-  h3 {
+}
+h2{
+    background-color: rosybrown;
+    color: rgb(245, 245, 200);           
+    text-align: center;
+    padding: 8px 0;
+    margin: 30px;
+   }
+main{
+    border: 2px solid #0b0303;
+    padding: 20px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+h3 {
     text-decoration-line: underline;
     margin-top: 0;
-  }
-  img {
-    background-color: black;
+}
+.imagen{
+    width: 30%;
+    max-width: 100;
+}
+.foto{
+    width: 40%;
+    max-width: 100;
+}
+article{
+    width: 80;
     margin: 0 auto;
+    text-align: center;
+}
+table,th,td,caption{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+h3{
+    text-decoration-line: underline;
+}
+img{
+    background-color: black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+section{
+    width: 80;
+    margin: 0 auto ;
+    text-align: center;
+    list-style: none;
+    }
+.foto {
     width: 200px;
-    height: auto;
-  }
+    height: 200px;
+    display: block;
+    margin: 0% auto;
+}
+.logo-container {
+        width: 200px;
+        height: 200px; 
+        margin: 50px auto;
+        position: relative;
+}
+.logo {
+        width: 4%;
+        height: auto;
+        animation: girar 4s;
+        transition: transform 1s ease;
+}
+.logo:hover {
+      transform: rotate(360deg);
+}
+.desplazamiento {
+      max-height: 300px; 
+      overflow-y: auto; 
+      margin-left: 50px;
+      margin-right: 50px;
+      margin-top: 50px;
+      border: solid;
+}
+.flecha{
+      text-align: right;
+      width: 4%;
+      right: 4%;
+      margin-right: -900px;
+      border-radius: 50px;
+      cursor: pointer;
+}

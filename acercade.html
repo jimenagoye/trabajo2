@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,31 +7,46 @@
     <link rel="stylesheet" href="estilo.css" />
   </head>
 
-  <body>
-    <header>
-      <h1>Página personal de Jimena Lara Goyenola</h1>
+  <body id="inicio">
+    <header class="contenedor contenedor-menu">
+      <h1>Página personal de Jimena Lara Goyenola <img class="logo" src="https://admin.curza.uncoma.edu.ar/wp-content/uploads/2020/02/CURZA-logo.png" alt="Logo del CURZA"> </h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="acercade.html">ACERCA DE</a></li>
+        </ul>
+      </nav>
     </header>
-    <nav>
-      <ul>
-        <li><a href="index.html">INICIO</a></li>
-        <li><a href="acercade.html">ACERCA DE</a></li>
-      </ul>
-    </nav>
+  
     <main>
-      <h2>Acerca de mí</h2>
-      <img src="https://1000marcas.net/wp-content/uploads/2020/02/Logo-Hogwarts.png" alt=""/>
-
-      <p>
-        Esta es una pequeña biografía sobre mí: <br />
-        Hola :D Mi nombre es Jimena Lara Goyenola, tengo 20 años y soy
-        estudiante de la Universidad Nacional del Comahue, donde estoy en la
-        carrera de Desarrollo Web.
-      </p>
+      <section class="desplazamiento">
+        <h2>Introducción:</h2>
+        <article class="acercade">
+        <p>
+          Esta es una pequeña biografía sobre mí: <br />
+          Hola :D Mi nombre es Jimena Lara Goyenola, tengo 20 años <br>
+          y soy estudiante de la Universidad Nacional del Comahue <br>
+          donde estoy en la carrera de Desarrollo Web.
+        </p>
+        <img class="foto" src="https://cdn.vdmnoticias.com/uploads/images/2023/03/d66169d4-1ad2-5553-bac0-e6a48b9bbeac_mid.jpg" alt="">
+        <figure>
+          <figcaption> Exterior de la Universidad del Curza</figcaption>
+        </figure>
+      </section>
+      <aside>
+        La imagen fue extraída de la página oficial de la Universidad del Comahue.
+        </aside>
+      </article>
     </main>
+    
     <footer>
-      <p>© 2024 Jimena Lara Goyenola></p>
+      <p>© 2024 Jimena Lara Goyenola</p>
       <p>Todos los derechos reservados</p>
       <p>CURZA - Monseñor Esandi y Ayacucho - 8500</p>
+      <a href="index.html">Inicio</a>
     </footer>
+    <a href="#inicio">
+      <img class="flecha" src="https://static.vecteezy.com/system/resources/previews/001/500/306/non_2x/arrow-upward-icon-free-vector.jpg" alt="">
+    </a>
   </body>
 </html>
