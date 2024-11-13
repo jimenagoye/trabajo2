@@ -140,7 +140,6 @@ section{
       border-radius: 50px;
       cursor: pointer;
 }
-/* Estilo para el contenedor principal del currículum */
 #curriculum {
     text-align: center;
     max-width: 600px;
@@ -150,14 +149,10 @@ section{
     border-radius: 10px;
     background-color: #f4d6c1;
 }
-
-/* Estilo para el resumen inicial */
 #curriculum .resumen {
     font-size: 1.1em;
     margin-bottom: 15px;
 }
-
-/* Estilo para el contenido expandido */
 .datos {
     background-color: rosybrown;
     color: rgb(245, 245, 200);           
@@ -166,15 +161,11 @@ section{
     border-radius: 8px;
     text-align: left;
 }
-
-/* Título de cada sección del currículum */
 .datos h3 {
     margin-top: 15px;
     font-size: 1.2em;
     color: #f4d6c1;
 }
-
-/* Lista para la información personal */
 .info-personal {
     list-style: none;
     padding: 0;
@@ -185,7 +176,6 @@ section{
     margin: 8px 0;
 }
 
-/* Estilo para el botón */
 #leer-mas {
     background-color: #791e48;
     color: white;
