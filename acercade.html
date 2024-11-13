@@ -1,52 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Acerca de - Jimena Lara Goyenola</title>
     <link rel="stylesheet" href="estilo.css" />
-  </head>
+    <script src="script.js" defer></script>
+</head>
 
-  <body id="inicio">
+<body id="inicio">
     <header class="contenedor contenedor-menu">
-      <h1>Página personal de Jimena Lara Goyenola <img class="logo" src="https://admin.curza.uncoma.edu.ar/wp-content/uploads/2020/02/CURZA-logo.png" alt="Logo del CURZA"> </h1>
-      <nav>
-        <ul class="menu">
-          <li><a href="index.html">INICIO</a></li>
-          <li><a href="acercade.html">ACERCA DE</a></li>
-          <li><a href="formulario.html">CONTACTO</a></li>
-        </ul>
-      </nav>
+        <h1>Página personal de Jimena Lara Goyenola <img class="logo" src="https://admin.curza.uncoma.edu.ar/wp-content/uploads/2020/02/CURZA-logo.png" alt="Logo del CURZA"> </h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="acercade.html">ACERCA DE</a></li>
+                <li><a href="formulario.html">CONTACTO</a></li>
+            </ul>
+        </nav>
     </header>
-  
+
     <main>
-      <section class="desplazamiento">
-        <h2>Introducción:</h2>
-        <article class="acercade">
-        <p>
-          Esta es una pequeña biografía sobre mí: <br />
-          Hola :D Mi nombre es Jimena Lara Goyenola, tengo 20 años <br>
-          y soy estudiante de la Universidad Nacional del Comahue <br>
-          donde estoy en la carrera de Desarrollo Web.
-        </p>
-        <img class="foto" src="https://cdn.vdmnoticias.com/uploads/images/2023/03/d66169d4-1ad2-5553-bac0-e6a48b9bbeac_mid.jpg" alt="">
-        <figure>
-          <figcaption> Exterior de la Universidad del Curza</figcaption>
-        </figure>
-      </section>
-      <aside>
-        La imagen fue extraída de la página oficial de la Universidad del Comahue.
-        </aside>
-      </article>
+        <section class="desplazamiento">
+            <h2>Introducción:</h2>
+            <article class="acercade">
+                <p>
+                    Esta es una pequeña biografía sobre mí: <br />
+                    Hola :D Mi nombre es Jimena Lara Goyenola, tengo 20 años <br>
+                    y soy estudiante de la Universidad Nacional del Comahue <br>
+                    donde estoy en la carrera de Desarrollo Web.
+                </p>
+                <img class="foto" src="https://cdn.vdmnoticias.com/uploads/images/2023/03/d66169d4-1ad2-5553-bac0-e6a48b9bbeac_mid.jpg" alt="">
+                <figure>
+                    <figcaption>
+                        La imagen fue extraída de la página oficial de la Universidad del Comahue.
+                    </figcaption>
+                </figure>
     </main>
-    
+    <section id="curriculum">
+        <p class="resumen">
+            Actualmente estudio en la Universidad Nacional del Comahue en el CURZA, donde me formo en Desarrollo Web. 
+            Tengo conocimientos en HTML, CSS, y JavaScript...
+        </p>
+        
+        <div id="curriculum-completo" class="datos" style="display: none;">
+            <h3>Conocimientos y Habilidades</h3>
+            <p>
+                Además de HTML, CSS y JavaScript, tengo interés en el desarrollo frontend y backend. 
+                Estoy aprendiendo nuevas tecnologías para mejorar mis habilidades en desarrollo web. 
+                Me motiva seguir capacitándome para contribuir a proyectos innovadores y sostenibles.
+            </p>
+            <h3>Información Personal</h3>
+            <ul class="info-personal">
+                <li><strong>Nombre Completo:</strong> Jimena Lara Goyenola</li>
+                <li><strong>Edad:</strong> 20 años</li>
+                <li><strong>Ciudad y País:</strong> Viedma, Río Negro, Argentina</li>
+                <li><strong>Email:</strong> jimenagoyenola@gmail.com</li>
+            </ul>
+            <h3>Educación</h3>
+            <p>Universidad Nacional del Comahue - CURZA</p>
+            <p><strong>Carrera:</strong> Desarrollo Web</p>
+            <h3>Habilidades Técnicas:</h3>
+            <p>Frontend: HTML, CSS, JavaScript</p>
+            <p>Herramientas de Desarrollo: Git, GitHub, Visual Studio Code</p>
+        </div>
+        
+        <button id="leer-mas">Leer más</button>
+    </section>                
+</article>
+</section>
     <footer>
-      <p>© 2024 Jimena Lara Goyenola</p>
-      <p>Todos los derechos reservados</p>
-      <p>CURZA - Monseñor Esandi y Ayacucho - 8500</p>
+        <p>© 2024 Jimena Lara Goyenola</p>
+        <p>Todos los derechos reservados</p>
+        <p>CURZA - Monseñor Esandi y Ayacucho - 8500</p>
     </footer>
     <a href="#inicio">
-      <img class="flecha" src="https://static.vecteezy.com/system/resources/previews/001/500/306/non_2x/arrow-upward-icon-free-vector.jpg" alt="">
+        <img class="flecha" src="https://static.vecteezy.com/system/resources/previews/001/500/306/non_2x/arrow-upward-icon-free-vector.jpg" alt="">
     </a>
-  </body>
+</body>
 </html>

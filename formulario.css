@@ -5,11 +5,10 @@ ul {
     position: sticky;
     top: 0;
     z-index: 1000; 
-    padding: 0px 5px;
-    width: 80%;
+    padding: 1%;
+    width: 10%;
     box-sizing: border-box;
 }
-
 nav ul {
     list-style: none;
     overflow: hidden; 
@@ -18,12 +17,11 @@ nav ul li {
     float: right;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    list-style: none;
-    margin-left: 25px;
+    margin-left: 20%;
 }
 nav ul li a {
     display: block; 
-    padding: 20px;
+    padding: 10px;
     color: #141414;
     text-decoration: none;
 }
@@ -34,39 +32,22 @@ nav ul li:hover {
 form {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     max-width: 400px;
     margin: 5% auto;
-    width: 59%;
     padding: 3%;
     background-color: #99507a;
     border-radius: 50px;
+    color: white;
 }
 .form-group {
     margin-bottom: 20px;
-}
-div {
-    background-color: rosybrown;
-    margin: 10px 0;
-    border: solid 10px #791e48;
-    border-radius: 30px;
-    padding: 10px;
-}
-p {
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 10%;
-}
-label, input, textarea {
-    display: block;
-    margin-bottom: 10%;
+    width: 100%;
 }
 label {
     text-align: left;
-    display: block;
-    margin-bottom: 5%;
-    border-radius: 5%;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 5px;
 }
 input[type="text"],
 input[type="email"],
@@ -74,20 +55,12 @@ input[type="tel"],
 input[type="number"],
 textarea,
 select {
-    width: 80%;
-    padding: 8%;
-    border: 1% solid #ccc;
-    border-radius: 4%;
-    margin-bottom: 10%;
-}
-.BotonArriba{
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 40px;
-    box-shadow: none;
-    border-radius: 20px;
-    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
 }
 button[type="submit"]:hover,
 button[type="button"]:hover {
@@ -95,45 +68,38 @@ button[type="button"]:hover {
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
-    border: 2px solid #974879;
-    padding: 20px;
     background-color: #c27ba4;
-    display: flex;
-}
-.BotonArriba {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 40px;
-    box-shadow: none;
-    border-radius: 20px;
-    cursor: pointer;
+    margin: 0;
+    padding: 20px;
 }
 table {
-    width: 30%;
+    width: 50%;
     border-collapse: collapse;
     background-color: #f4d6c1;
-    margin-top: 20px 0;
-    font-size: 1.25rem;
+    margin-top: 20px;
+    font-size: 1rem;
+    margin-left: 25%;
 }
 table, th, td {
     border: 1px solid black;
 }
 th, td {
-    padding: 0px;
+    padding: 10px;
     text-align: left;
-    border: 2px solid black;
 }
-div input {
-    margin: -1%;
-}
-.flecha{
-    text-align: right;
-    width: 50%;
-    right: 2%;
-    margin-right: -900px;
-    margin-top: 4500%;
-    border-radius: 50px;
+.flecha {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
     cursor: pointer;
-    padding: 20%;
-  }
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+footer {
+    text-align: center;
+}

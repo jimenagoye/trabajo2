@@ -43,16 +43,6 @@ footer {
   background-color: rosybrown ;
   z-index: 100;
 }
-aside {
-    display: inline-block;
-    width: 300px;
-    min-height: 50px;
-    background-color: pink;
-    margin: 10px;
-    padding: 10px;
-    margin-top: 50px;
-    border: 2px solid black;
-}
 ol{
     text-align: center;
     list-style: none;
@@ -149,4 +139,73 @@ section{
       margin-right: -700px;
       border-radius: 50px;
       cursor: pointer;
+}
+/* Estilo para el contenedor principal del currículum */
+#curriculum {
+    text-align: center;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #791e48;
+    border-radius: 10px;
+    background-color: #f4d6c1;
+}
+
+/* Estilo para el resumen inicial */
+#curriculum .resumen {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+/* Estilo para el contenido expandido */
+.datos {
+    background-color: rosybrown;
+    color: rgb(245, 245, 200);           
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+/* Título de cada sección del currículum */
+.datos h3 {
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #f4d6c1;
+}
+
+/* Lista para la información personal */
+.info-personal {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-personal li {
+    margin: 8px 0;
+}
+
+/* Estilo para el botón */
+#leer-mas {
+    background-color: #791e48;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#leer-mas:hover {
+    background-color: #974879;
+}
+figcaption{
+    display: inline-block;
+    width: 300px;
+    min-height: 50px;
+    background-color: pink;
+    margin: 0%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid black;
 }
