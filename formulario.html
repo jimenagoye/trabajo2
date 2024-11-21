@@ -17,7 +17,7 @@
     <main>
 
         <h1>Formulario de Contacto</h1>
-        <form action="#" method="post">
+        <form action="#" method="post" id="formulario">
             <div class="form-group">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" maxlength="20" required>
@@ -71,13 +71,13 @@
             <fieldset>
                 <legend>Método preferido de contacto:</legend>
                 <div class="form-group">
-                    <label><input type="radio" name="contacto" value="correoElectronico" checked> Correo Electrónico</label>
+                    <label><input type="radio" id="contactoCorreo" name="contacto" value="correoElectronico" checked> Correo Electrónico</label>
                 </div>
                 <div class="form-group">
-                    <label><input type="radio" name="contacto" value="correoPostal"> Correo Postal</label>
+                    <label><input type="radio" id="contactoPostal" name="contacto" value="correoPostal"> Correo Postal</label>
                 </div>
                 <div class="form-group">
-                    <label><input type="radio" name="contacto" value="telefono"> Teléfono</label>
+                    <label><input type="radio" id="contactoTelefono" name="contacto" value="telefono"> Teléfono</label>
                 </div>
             </fieldset>
             <br>
@@ -95,71 +95,71 @@
                 <div class="form-group">
                     <label><input type="checkbox" name="suscripcion[]" value="eventos"> Eventos</label>
                 </div>
-                <button type="button" id="cargar">Cargar</button>
+                <button type="submit" id="cargar">Cargar</button>
             </fieldset>
         </form>
-    </br>
-         
-    <h2>Datos del formulario:</h2>
-    <table border="1" id="tabla">
-        <thead>
-            <tr>
-                <th>Campo</th>
-                <th>Valor</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr data-field="nombre">
-                <td>Nombre</td>
-                <td></td>
-            </tr>
-            <tr data-field="apellido">
-                <td>Apellido</td>
-                <td></td>
-            </tr>
-            <tr data-field="email">
-                <td>Email</td>
-                <td></td>
-            </tr>
-            <tr data-field="telefono">
-                <td>Teléfono</td>
-                <td></td>
-            </tr>
-            <tr data-field="edad">
-                <td>Edad</td>
-                <td></td>
-            </tr>
-            <tr data-field="direccion">
-                <td>Dirección</td>
-                <td></td>
-            </tr>
-            <tr data-field="provincia">
-                <td>Provincia</td>
-                <td></td>
-            </tr>
-            <tr data-field="codigoPostal">
-                <td>Código Postal</td>
-                <td></td>
-            </tr>
-            <tr data-field="contacto">
-                <td>Método de Contacto</td>
-                <td></td>
-            </tr>
-            <tr data-field="suscripcion">
-                <td>Suscripción</td>
-                <td></td>
-            </tr>
-        </tbody>
-    </table>    
-        <footer> 
-            Jimena Lara Goyenola <br> 
+
+        <h2>Datos del formulario:</h2>
+        <table border="1" id="tabla">
+            <thead>
+                <tr>
+                    <th>Campo</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-field="nombre">
+                    <td>Nombre</td>
+                    <td></td>
+                </tr>
+                <tr data-field="apellido">
+                    <td>Apellido</td>
+                    <td></td>
+                </tr>
+                <tr data-field="email">
+                    <td>Email</td>
+                    <td></td>
+                </tr>
+                <tr data-field="telefono">
+                    <td>Teléfono</td>
+                    <td></td>
+                </tr>
+                <tr data-field="edad">
+                    <td>Edad</td>
+                    <td></td>
+                </tr>
+                <tr data-field="direccion">
+                    <td>Dirección</td>
+                    <td></td>
+                </tr>
+                <tr data-field="provincia">
+                    <td>Provincia</td>
+                    <td></td>
+                </tr>
+                <tr data-field="codigoPostal">
+                    <td>Código Postal</td>
+                    <td></td>
+                </tr>
+                <tr data-field="contacto">
+                    <td>Método de Contacto</td>
+                    <td></td>
+                </tr>
+                <tr data-field="suscripcion">
+                    <td>Suscripción</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <footer>
+            Jimena Lara Goyenola <br>
             Email: goyenolajimena8@gmail.com <br>
             Dirección del CURZA: Monseñor Esandi y Ayacucho, 8500 - Viedma, Río Negro, Argentina
         </footer>
     </main>
     <a href="#inicio">
-      <img class="flecha" src="https://static.vecteezy.com/system/resources/previews/001/500/306/non_2x/arrow-upward-icon-free-vector.jpg" alt="">
+        <img class="flecha" src="https://static.vecteezy.com/system/resources/previews/001/500/306/non_2x/arrow-upward-icon-free-vector.jpg" alt="">
     </a>
-    <script src="script.js"></script>
+    <script src="contacto.js"></script>
 </body>
 </html>
