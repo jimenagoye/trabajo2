@@ -139,7 +139,9 @@ section{
       margin-right: -700px;
       border-radius: 50px;
       cursor: pointer;
-}
+
+    }
+
 #curriculum {
     text-align: center;
     max-width: 600px;

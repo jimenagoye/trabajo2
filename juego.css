@@ -1,0 +1,113 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color:  rosybrown;
+}
+
+.tablero {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.carta {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.carta .trasera,
+.carta .frontal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: transform 0.5s;
+    border-radius: 10px;
+}
+
+.carta .trasera {
+    background-color: #333;
+    transform: rotateY(0deg);
+}
+
+.carta .frontal {
+    transform: rotateY(180deg);
+}
+
+.carta .frontal img {
+    width: 100%; /* Asegura que la imagen ocupe todo el espacio de la carta */
+    height: 100%; /* Asegura que la imagen no se distorsione */
+    object-fit: cover; /* Mantiene la proporción de la imagen sin deformarse */
+}
+
+.carta.volteada .trasera {
+    transform: rotateY(-180deg);
+}
+
+.carta.volteada .frontal {
+    transform: rotateY(0deg);
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Animación de la copa */
+@keyframes explotar {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+/* Estilo para la copa ganadora */
+.copa {
+    position: fixed;
+    top: 30%;
+    left: 48%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    animation: explotar 2s forwards;
+    z-index: 1000;
+}
+
+.copa img {
+    width: 100px;
+    height: 100px;
+}
+.menu{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: rosybrown ;
+    z-index: 100;
+  }
+  ul{
+    list-style-type: none;
+    padding: 0;
+}

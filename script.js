@@ -17,3 +17,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     });
     });
+
+    // Seleccionar la flecha
+    const flecha = document.querySelector('.flecha');
+
+    // Agregar el evento de clic
+    flecha.addEventListener('click', () => {
+        // Hacer scroll hacia arriba suavemente
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
